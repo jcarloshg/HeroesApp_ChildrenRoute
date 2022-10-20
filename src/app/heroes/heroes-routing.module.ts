@@ -14,6 +14,10 @@ const routes: Routes = [
     component: HomeComponent,
     children: [
       {
+        path: 'listado',
+        component: ListadoComponent,
+      },
+      {
         path: 'home',
         component: HomeComponent,
       },
@@ -32,10 +36,6 @@ const routes: Routes = [
       {
         path: ':id',
         component: HeroeComponent,
-      },
-      {
-        path: 'listado',
-        component: ListadoComponent,
       },
       {
         path: '**',
