@@ -11,6 +11,7 @@ import { ListadoComponent } from './pages/listado/listado.component';
 const routes: Routes = [
   {
     path: '',
+    component: HomeComponent,
     children: [
       {
         path: 'home',
@@ -49,6 +50,9 @@ const routes: Routes = [
   declarations: [],
   imports: [
     RouterModule.forChild(routes),
+  ],
+  exports: [
+    RouterModule,
   ]
 })
 export class HeroesRoutingModule { }
