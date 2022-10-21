@@ -6,6 +6,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
+import { MatGridListModule } from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -16,6 +18,8 @@ import { MatCardModule } from '@angular/material/card';
     MatToolbarModule,
     MatListModule,
     MatCardModule,
+    MatProgressSpinnerModule,
+    MatGridListModule,
   ]
 })
 export class MaterialModule { }
