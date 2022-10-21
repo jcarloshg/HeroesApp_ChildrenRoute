@@ -24,4 +24,9 @@ export class HeroesService {
     // http://localhost:3000/heroes/dc-wonder
     return this.http.get<Heroe>(`${this.URL}/${idHeroe}`);
   }
+
+  getSugerencias(sugerencia: string): Observable<Heroe[]> {
+    // http://localhost:3000/heroes?q=a
+    return this.http.get<Heroe[]>(`${this.URL}?q=${sugerencia}`);
+  }
 }
