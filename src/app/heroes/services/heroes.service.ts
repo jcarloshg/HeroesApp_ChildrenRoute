@@ -29,4 +29,9 @@ export class HeroesService {
     // http://localhost:3000/heroes?q=a
     return this.http.get<Heroe[]>(`${this.URL}?q=${sugerencia}`);
   }
+
+  crearHeroe(heroe: Heroe): Observable<Heroe> {
+    // http://localhost:3000/heroes?q=a
+    return this.http.post<Heroe>(`${this.URL}`, heroe);
+  }
 }
