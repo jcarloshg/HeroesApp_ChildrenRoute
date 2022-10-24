@@ -8,27 +8,15 @@
       </button>
     </mat-toolbar>
     <mat-nav-list>
-      <mat-list-item
-        role="listitem"
-        routerLink="./listado"
-        (click)="sidenav.toggle()"
-      >
+      <mat-list-item role="listitem" routerLink="./listado" (click)="sidenav.toggle()">
         <mat-icon mat-list-icon fontIcon="format_list_bulleted"></mat-icon>
         Listado heroes
       </mat-list-item>
-      <mat-list-item
-        role="listitem"
-        routerLink="./buscar"
-        (click)="sidenav.toggle()"
-      >
+      <mat-list-item role="listitem" routerLink="./buscar" (click)="sidenav.toggle()">
         <mat-icon mat-list-icon fontIcon="search"></mat-icon>
         Buscar un heroe
       </mat-list-item>
-      <mat-list-item
-        role="listitem"
-        routerLink="./agregar"
-        (click)="sidenav.toggle()"
-      >
+      <mat-list-item role="listitem" routerLink="./agregar" (click)="sidenav.toggle()">
         <mat-icon mat-list-icon fontIcon="add"></mat-icon>
         Agregar heroe
       </mat-list-item>
@@ -40,7 +28,10 @@
       <mat-icon>menu</mat-icon>
     </button>
     <span class="spacer"></span>
-    <button mat-button>Log-out</button>
+
+    <span>{{auth.usuario}}</span>
+
+    <button mat-button (click)="logOut()">Log-out</button>
   </mat-toolbar>
 
   <div class="container">
