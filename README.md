@@ -2,6 +2,64 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.4.
 
+## run project
+### install [JSON Server](https://www.npmjs.com/package/json-server)
+```cmd
+
+npm install -g json-server
+
+// run json-server
+cd /HeroesApp_ChildrenRoute/05-heroesApp-server/
+json-server --watch db.json
+ 
+// start project
+ng server 
+// or 
+npm run start
+```
+
+## Topics
+- Rutas Hijas
+- Rutas Principales
+- LazyLoad
+- Angular Material
+- Interfaces y tipado
+- Pipes personalizados
+- Variables de entorno
+- Autocomplete de AngularMaterial
+- Peticiones HTTP
+- JSON-Server
+- Angular Flex y Flexbox
+- Protección de rutas
+- Rutas privadas
+- Rutas públicas
+- Servicio de autenticación
+- Guards
+- CanActivate
+- Can Load
+
+## ScreenShots
+
+### init
+![init](https://raw.githubusercontent.com/jcarloshg/HeroesApp_ChildrenRoute/main/src/assets/screenshots/init.png)
+### loggin // todo
+![loggin](https://raw.githubusercontent.com/jcarloshg/HeroesApp_ChildrenRoute/main/src/assets/screenshots/loggin.png)
+### menu
+![menu](https://raw.githubusercontent.com/jcarloshg/HeroesApp_ChildrenRoute/main/src/assets/screenshots/menu.png)
+### listados with flexLayout
+![flex0](https://raw.githubusercontent.com/jcarloshg/HeroesApp_ChildrenRoute/main/src/assets/screenshots/flex_0.png)
+![flex1](https://raw.githubusercontent.com/jcarloshg/HeroesApp_ChildrenRoute/main/src/assets/screenshots/flex_1.png)
+![flex2](https://raw.githubusercontent.com/jcarloshg/HeroesApp_ChildrenRoute/main/src/assets/screenshots/flex_2.png)
+![flex3](https://raw.githubusercontent.com/jcarloshg/HeroesApp_ChildrenRoute/main/src/assets/screenshots/flex_3.png)
+### agregar
+![agregar](https://raw.githubusercontent.com/jcarloshg/HeroesApp_ChildrenRoute/main/src/assets/screenshots/crear.png)
+### editar
+![editar](https://raw.githubusercontent.com/jcarloshg/HeroesApp_ChildrenRoute/main/src/assets/screenshots/modificar.png)
+### borrar
+![borrar](https://raw.githubusercontent.com/jcarloshg/HeroesApp_ChildrenRoute/main/src/assets/screenshots/borrar_confirmacion.png)
+
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
