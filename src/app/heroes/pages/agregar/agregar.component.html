@@ -1,4 +1,12 @@
-<h1>Agregar nuevo heroe</h1>
+<ng-container *ngIf="heroe.id; else nuevoHeroe">
+    <h1>Editar heroe <span>{{heroe.superhero}}</span> </h1>
+</ng-container>
+<ng-template #nuevoHeroe>
+    <h1>Agregar nuevo heroe</h1>
+</ng-template>
+
+
+
 
 <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="40px">
 
@@ -56,10 +64,22 @@
 
         <pre>{{heroe | json}}</pre>
 
-        <button mat-raised-button color="primary" (click)="registrarHeroe()">
-            <mat-icon>save</mat-icon>
-            Guardar
-        </button>
+        <div fxLayout>
+
+            <button mat-raised-button color="primary" (click)="registrarHeroe()">
+                <mat-icon>save</mat-icon>
+                {{
+                (heroe.id) ? 'Actualiar' : 'Crear nuevo'
+                }}
+            </button>
+
+            <span class="spacer"></span>
+
+            <button mat-raised-button color="warn" *ngIf="heroe.id" (click)="deleteHeroe()">
+                <mat-icon>remove</mat-icon>
+                Borrar
+            </button>
+        </div>
 
     </div>
 

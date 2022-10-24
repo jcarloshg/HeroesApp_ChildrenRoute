@@ -13,6 +13,7 @@ import { ListadoComponent } from './pages/listado/listado.component';
 import { HeroesRoutingModule } from './heroes-routing.module';
 import { HeroeTarjetaComponentComponent } from './components/heroe-tarjeta-component/heroe-tarjeta-component.component';
 import { HeroeImagePipe } from './pipes/heroe-image.pipe';
+import { ConfirmarDeleteComponent } from './components/confirmar-delete/confirmar-delete.component';
 
 
 
@@ -24,7 +25,8 @@ import { HeroeImagePipe } from './pipes/heroe-image.pipe';
     HomeComponent,
     ListadoComponent,
     HeroeTarjetaComponentComponent,
-    HeroeImagePipe
+    HeroeImagePipe,
+    ConfirmarDeleteComponent
   ],
   imports: [
     CommonModule,
